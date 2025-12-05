@@ -1,0 +1,1 @@
+export { default } from "/home/norman/Development/Techxtrasol/Vue/evanskiplangat25-collab.github.io/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"

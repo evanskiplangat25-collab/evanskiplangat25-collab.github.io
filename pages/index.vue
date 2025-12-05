@@ -1,38 +1,58 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <div class="container mx-auto px-4 py-8">
+  <div class="min-h-screen bg-gray-50 dark:bg-gray-950">
+    <UContainer class="py-8">
       <div class="text-center">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
           Welcome to My Portfolio
         </h1>
-        <p class="text-xl text-gray-600 mb-8">
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
           A modern web application built with Nuxt.js
         </p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold mb-2">About</h3>
-            <p class="text-gray-600">
+          <UCard>
+            <template #header>
+              <h3 class="text-lg font-semibold">About</h3>
+            </template>
+            <p class="text-gray-600 dark:text-gray-400">
               Learn more about my skills and experience.
             </p>
-          </div>
+            <template #footer>
+              <UButton variant="outline" size="sm">Learn More</UButton>
+            </template>
+          </UCard>
           
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold mb-2">Projects</h3>
-            <p class="text-gray-600">
+          <UCard>
+            <template #header>
+              <h3 class="text-lg font-semibold">Projects</h3>
+            </template>
+            <p class="text-gray-600 dark:text-gray-400">
               Explore my latest work and contributions.
             </p>
-          </div>
+            <template #footer>
+              <UButton variant="outline" size="sm">View Projects</UButton>
+            </template>
+          </UCard>
           
-          <div class="bg-white p-6 rounded-lg shadow-md">
-            <h3 class="text-lg font-semibold mb-2">Contact</h3>
-            <p class="text-gray-600">
+          <UCard>
+            <template #header>
+              <h3 class="text-lg font-semibold">Contact</h3>
+            </template>
+            <p class="text-gray-600 dark:text-gray-400">
               Get in touch for collaborations.
             </p>
-          </div>
+            <template #footer>
+              <UButton variant="outline" size="sm">Contact Me</UButton>
+            </template>
+          </UCard>
+        </div>
+
+        <div class="mt-12">
+          <UButton size="lg" class="mr-4">Get Started</UButton>
+          <UButton variant="outline" size="lg">Learn More</UButton>
         </div>
       </div>
-    </div>
+    </UContainer>
   </div>
 </template>
 

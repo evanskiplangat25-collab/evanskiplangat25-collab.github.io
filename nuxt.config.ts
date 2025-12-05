@@ -18,6 +18,11 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  image: {
+    // Configure the image module
+    quality: 80
+  },
+
   nitro: {
     prerender: {
       routes: [

@@ -178,7 +178,7 @@ defineProps<{
           delay: index * 0.1
         }"
       >
-        <NuxtImg
+        <img
           width="234"
           height="234"
           class="rounded-lg aspect-square object-cover"

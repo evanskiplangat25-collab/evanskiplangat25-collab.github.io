@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     }
   },
 
+  ssr: true,
+
   eslint: {
     config: {
       stylistic: {

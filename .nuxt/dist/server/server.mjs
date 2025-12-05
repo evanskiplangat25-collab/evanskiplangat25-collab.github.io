@@ -1,1 +1,0 @@
-export { default } from "file:///home/norman/Development/Techxtrasol/Vue/evanskiplangat25-collab.github.io/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

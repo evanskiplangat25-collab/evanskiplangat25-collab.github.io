@@ -44,5 +44,11 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
   }
 })

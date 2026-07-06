@@ -33,6 +33,12 @@ export default defineNuxtConfig({
     }
   },
 
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
@@ -44,11 +50,5 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true
-  },
-
-  vite: {
-    optimizeDeps: {
-      include: []
-    }
   }
 })
